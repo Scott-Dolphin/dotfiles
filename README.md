@@ -1,2 +1,2 @@
 # mudae-dotfiles
-note: image paths not yet configured. I'll leave all images in `/media`
+note: image paths are configured to go to `/home/mudae/Pictures/config/`
