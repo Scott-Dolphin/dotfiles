@@ -1,8 +1,13 @@
 // -*- mode: jsonc -*-
 {
-   "position": "top",
-   "margin-top": 10,
+    "position": "top",
+    "margin-top": 10,
 
+    "hyprland/workspaces": {
+      "persistent-workspaces": {
+        "*": 6
+    }  
+  },
     "modules-center": [
         "clock",
         "hyprland/workspaces",
