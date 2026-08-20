@@ -31,7 +31,7 @@
 
 window#waybar {
     background-color: @base;
-    border-bottom: 1px solid @teal;
+    /* border-bottom: 1px solid @teal; */
 }
 
 tooltip {
