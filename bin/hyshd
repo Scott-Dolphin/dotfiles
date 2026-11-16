@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [[ $1 == "" ]]; then
+  # echo "shutdown sequence"
+  hyprshutdown --post-cmd 'systemctl poweroff'
+else
+  while getopts "hrv" flag; do
+    case $flag in
+    h) # display script help info
+      ;;
+
+    r) # reboot the computer
+      # echo "reboot sequence"
+      hyprshutdown --post-cmd 'systemctl reboot'
+      ;;
+    v) # display version
+      echo "Version 0.1.0"
+      ;;
+    esac
+  done
+fi
