@@ -7,6 +7,12 @@ else
   while getopts "hrv" flag; do
     case $flag in
     h) # display script help info
+      echo "Usage: hyshd [options]"
+      echo "Options: "
+      echo "  -           shuts the system down after hyprshutdown"
+      echo "  -h          print hyshd command line options"
+      echo "  -r          reboots the system after hyprshutdown"
+      echo "  -v          print hyshd version"
       ;;
 
     r) # reboot the computer
