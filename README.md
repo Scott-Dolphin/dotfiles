@@ -1,14 +1,16 @@
 # mudae-dotfiles
+Some notes to myself on what I want to do first in a fresh Arch environment
 1. note: image paths are configured to go to `/home/mudae/Pictures/config/`
 2. ZSH themed with P10k
 
+
 # Ricing order
 ## 1. Compositor
-  - **monitors.conf**
+  - **monitors.lua**
     - Resolution
     - Position
     - Multiple monitors relative position
-  - **decoration.conf**
+  - **decoration.lua**
     - Gaps
     - Borders
     - Rounding
@@ -16,7 +18,7 @@
     - Shadow
   - Screen Tearing (turn off variable frame rate)
 ## 2. Keybinds
-  - **binds.conf**
+  - **binds.lua**
     - close window
     - open terminal
     - App launcher
@@ -71,9 +73,5 @@ https://youtu.be/w1VZJX4JAdE?si=be4YKeFB--YyD604
 ## 8. Animations
   - Window transitions
   - bezier curves
-## 9. TMUX script
-  - use case: press "Super + T"
-  - What happens:
-    - run Telescope (ctrl + t) and save output
-    - run `tmux new -s "session-$(date + %Y%m%d) -c <Telescope output>`
+
 
